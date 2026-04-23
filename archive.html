@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full archive of posts.">
+  <meta name="referrer" content="no-referrer">
+  <title>Archive — The Moral Architecture</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+
+    <header class="site">
+      <h1 class="site-title"><a href="index.html">The Moral Architecture</a></h1>
+      <p class="site-tagline">Notes on AI ethics and governance.</p>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="archive.html" class="current">Archive</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <h1>Archive</h1>
+      <p>Everything posted so far, newest first.</p>
+
+      <div class="filters" id="filters">
+        <span>Show: </span>
+        <button data-f="all" class="active">all</button>
+        <button data-f="opinion">opinion</button>
+        <button data-f="research">research</button>
+        <span class="count" id="count"></span>
+      </div>
+
+      <ul class="post-list" id="archive-list"></ul>
+    </main>
+
+    <footer class="site">
+      <p>
+        The Moral Architecture
+      </p>
+    </footer>
+
+  </div>
+  <script src="posts.js"></script>
+</body>
+</html>
