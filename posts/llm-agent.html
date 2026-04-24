@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notes on accountability gaps in algorithmic decision-making.">
+  <meta name="referrer" content="no-referrer">
+  <title>LLM Agent Security and Privacy — The Moral Architecture</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <div class="shell">
+
+    <header class="site">
+      <h1 class="site-title"><a href="../index.html">The Moral Architecture</a></h1>
+      <p class="site-tagline">Notes on AI ethics and governance.</p>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../about.html">About</a>
+        <a href="../privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main class="post">
+      <header class="post-head">
+        <span class="tag">research</span>
+        <h1>LLM Agent Security and Privacy</h1>
+        <p class="dek">Current security and privacy issues of LLM Agents</p>
+        <p class="meta">24 Apr 2026 · 5 min read · Research piece</p>
+      </header>
+
+      <div class="post-body">
+
+        <h3> What is an LLM </h3>
+        <p>
+          A large language model (LLM) is a type of artificial intelligence trained on vast amounts
+          of data to interpret and produce human-like language. The field of LLM security
+          and privacy examines potential risks, aiming to detect, evaluate, and mitigate
+          threats associated with their use. Although these models are capable of tasks
+          such as text generation, language translation, and question answering,
+          they also present significant challenges, particularly in terms of security
+          weaknesses and privacy risks.
+        </p>
+
+        <h3> What is an LLM Agent </h3>
+        <p>
+          An LLM agent is distinct from an LLM as it is able to go beyond simply generating text.
+          It can understand instructions, make decisions, use tools, and take actions in order to complete tasks, often
+          by
+          interacting with users or external systems in a more autonomous way (K2View, 2025)
+        </p>
+
+        <h3> LLM Agent Risks </h3>
+
+        <p>Current LLM agents used today are improving in complexity but still maintain traditional
+          machine learning risks, such as data poisoning or adversarial attacks. Due to
+          their ability to interact with users, use external tools, and make decisions, these risks
+          can have more serious consequences compared to earlier models. For example,
+          vulnerabilities may lead to the:
+        <blockquote> "...leaking sensitive information, spreading misinformation, or even executing
+          harmful actions unintentionally" (He et al., 2025). </blockquote>
+        </p>
+
+        <p>
+          In addition to inherited risks, LLM agents also introduce new, agent-specific threats.
+          These can include the manipulation of outputs, any interferences with decision making processes, and
+          corruption of the data they rely on. As these systems become utilised more across many different
+          industries, addressing these concerns is becoming increasingly important to ensure their
+          reliability and trustworthiness (He et al., 2025).
+        </p>
+
+        <h3> LLM Agent Evaluation </h3>
+        <p>In order to determine the best methods of enforcing LLM agent security, it is important to consider proper
+          evaluation methods.
+          Due to the difficulty involved in evaluating LLM agents, which operate in dynamic environments, compared to
+          evaluating normal LLM calls,
+          some proposed methods include using a final response evaluation process (Black-Box) and a trajectory
+          evaluation process (Grey-Box).
+        </p>
+
+        <p>Black-Box evaluation only looks at the agent's final output, without any visibility into how it got there.
+          This makes it simple to apply, but it can miss a lot. An agent could arrive at the right answer through a
+          flawed or even dangerous process, and Black-Box evaluation would not catch that (Zhang et al., 2026).
+        </p>
+
+        <p>Grey-Box evaluation sits in the middle. Rather than only checking the final output, it looks at the sequence
+          of tools the agent used along the way. This gives a clearer picture of how the agent behaved and helps
+          uncover risky or unexpected actions that a purely outcome-focused approach would miss (Zhang et al., 2026).
+        </p>
+
+        <h3> Conclusion </h3>
+        <p>Overall, the security and privacy risks associated with LLM agents are still not fully understood and
+          continue to grow as the technology evolves. As these systems become more advanced and widely used,
+          the impact of their vulnerabilities becomes increasingly difficult to overlook. These risks range from
+          inherited issues like data poisoning and adversarial attacks to more agent-specific threats such as prompt
+          injection and output manipulation, showing that the overall attack surface is broad and expanding.</p>
+
+        <p>While evaluation approaches like black-box and grey-box testing are useful, current research suggests that no
+          single method is enough on its own to fully address these challenges (Zhang et al., 2026). What is clear is
+          that security and privacy need to be considered from the beginning of development, rather than treated as an
+          afterthought, requiring ongoing effort from researchers, developers, and organisations using these systems.
+        </p>
+
+        <hr>
+
+        <h3>Key Terms</h3>
+
+        <ul>
+          <li>Data poisoning: a type of cyberattack where corrupted or malicious data
+            is introduced into a model's training process, potentially causing it to
+            produce inaccurate or harmful outputs (Krantz and Jonker, 2024). </li>
+          <li>
+            Adversarial attacks: deliberately crafted inputs designed to manipulate a model’s
+            behaviour or force it to produce incorrect or misleading results (He et al., 2025).
+          </li>
+        </ul>
+
+        <hr>
+
+        <h3> References </h3>
+
+        <ol>
+          <li>He, F., Zhu, T., Ye, D., Liu, B., Zhou, W. and Yu, P.S. (2025) ‘The emerged security and privacy of LLM
+            agent: A survey with case studies’, ACM Computing Surveys, 58(6), Article 162, pp. 1–36. Available at:
+            https://doi.org/10.1145/3773080</li>
+          <li>Krantz, T. and Jonker, A. (2024) ‘Data poisoning’, IBM. Available at:
+            https://www.ibm.com/think/topics/data-poisoning.</li>
+          <li>K2view.com. (2025). K2view – The Data Product Company. Available at:
+            https://www.k2view.com/what-are-llm-agents/</li>
+          <li>Zhang, Y., Kang, S., Meng, R., Böhme, M. and Roychoudhury, A. (2026) 'VeriGrey: Greybox Agent Validation'.
+            Available at: https://arxiv.org/abs/2603.17639</li>
+        </ol>
+
+
+      </div>
+
+      <div class="post-footer">
+         <a href="../index.html">← Back to home</a>
+      </div>
+    </main>
+
+    <footer class="site">
+      <p>
+        The Moral Architecture
+      </p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
