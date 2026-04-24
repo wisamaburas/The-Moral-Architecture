@@ -9,10 +9,10 @@ const POSTS = [
   },
   {
     slug: "llm-agent.html",
-    title: "LLM Security and Privacy",
+    title: "LLM Agent Security and Privacy",
     excerpt: "Current security and privacy issues of LLM Agents",
     kind: "research",
-    date: "2026-04-23",
+    date: "2026-04-24",
     readTime: 5
   },
 ];
