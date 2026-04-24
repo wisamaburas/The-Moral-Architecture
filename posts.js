@@ -7,14 +7,14 @@ const POSTS = [
     date: "2026-04-20",
     readTime: 4
   },
-  // {
-  //   slug: "draft-research.html",
-  //   title: "Research draft",
-  //   excerpt: "Draft",
-  //   kind: "research",
-  //   date: "2026-04-23",
-  //   readTime: 0
-  // },
+  {
+    slug: "llm-agent.html",
+    title: "LLM Security and Privacy",
+    excerpt: "Current security and privacy issues of LLM Agents",
+    kind: "research",
+    date: "2026-04-23",
+    readTime: 5
+  },
 ];
 
 function fmtDate(iso) {
